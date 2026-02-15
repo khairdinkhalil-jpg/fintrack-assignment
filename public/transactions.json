@@ -1,0 +1,59 @@
+[
+  {
+    "_comment": "This file contains demo transactions for the local mock API. Add more data points as needed.",
+    "id": 1,
+    "date": "2026-01-03",
+    "merchant": "Tesco",
+    "category": "Groceries",
+    "amount": -42.75
+  },
+  {
+    "id": 2,
+    "date": "2026-01-05",
+    "merchant": "Shell Fuel",
+    "category": "Transport",
+    "amount": -55.00
+  },
+  {
+    "id": 3,
+    "date": "2026-01-06",
+    "merchant": "Monthly Salary",
+    "category": "Income",
+    "amount": 3200.00
+  },
+  {
+    "id": 4,
+    "date": "2026-01-10",
+    "merchant": "Netflix",
+    "category": "Entertainment",
+    "amount": -12.99
+  },
+  {
+    "id": 5,
+    "date": "2026-01-12",
+    "merchant": "Starbucks",
+    "category": "Dining Out",
+    "amount": -5.45
+  },
+  {
+    "id": 6,
+    "date": "2026-01-15",
+    "merchant": "Amazon",
+    "category": "Shopping",
+    "amount": -89.90
+  },
+  {
+    "id": 7,
+    "date": "2026-01-20",
+    "merchant": "Gym Membership",
+    "category": "Health",
+    "amount": -35.00
+  },
+  {
+    "id": 8,
+    "date": "2026-01-25",
+    "merchant": "British Gas",
+    "category": "Utilities",
+    "amount": -110.20
+  }
+]
