@@ -10,6 +10,7 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "chart.js": "^4.5.1",
     "primereact": "^10.9.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

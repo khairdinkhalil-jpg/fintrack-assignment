@@ -62,12 +62,14 @@ function TranscationTable() {
 							body={formatDate}
 							filter
 							filterPlaceholder="Date"
+							sortable
 						></Column>
 						<Column
 							field="merchant"
 							header="Merchant"
 							filter
 							filterPlaceholder="Marchant"
+							sortable
 						></Column>
 						<Column 
 							field="category"
@@ -76,6 +78,7 @@ function TranscationTable() {
 							filterPlaceholder="All Categories"
 							filterElement={categoryRowFilterTemplate}
 							showFilterMenu={false}
+							sortable
 						></Column>
 						<Column 
 							field="amount" 
@@ -83,6 +86,7 @@ function TranscationTable() {
 							body={formatAmount} 
 							filter
 							filterPlaceholder="Amount"
+							sortable
 						></Column>
 					</DataTable>
 			}
