@@ -142,7 +142,7 @@ Each transaction includes: ✅
 - amount
 
 Requirements:
-- Display all transactions in a table 
+- Display all transactions in a table ✅
 - Format dates: 
   - `2026-01-03` → `Jan 3, 2026` ✅
 - Format amounts as currency:
@@ -151,8 +151,8 @@ Requirements:
 - Positive amounts may be green or default styling ✅
 
 States:
-- **Loading** indicator during API fetch
-- **Error** state with a Retry button if API fails
+- **Loading** indicator during API fetch ✅
+- **Error** state with a Retry button if API fails ✅
 
 ------------------------------------------------------------
 2) CATEGORY FILTER
