@@ -134,7 +134,7 @@ You will implement a mini personal finance dashboard.
 
 Fetch transactions using `getTransactions()` from `mockApi.ts`.
 
-Each transaction includes:
+Each transaction includes: ✅
 - id
 - date
 - merchant
@@ -142,13 +142,13 @@ Each transaction includes:
 - amount
 
 Requirements:
-- Display all transactions in a table
-- Format dates:
-  - `2026-01-03` → `Jan 3, 2026`
+- Display all transactions in a table 
+- Format dates: 
+  - `2026-01-03` → `Jan 3, 2026` ✅
 - Format amounts as currency:
-  - `-42.75` → `£42.75`
-- Negative amounts must be red
-- Positive amounts may be green or default styling
+  - `-42.75` → `£42.75`  ✅
+- Negative amounts must be red ✅
+- Positive amounts may be green or default styling ✅
 
 States:
 - **Loading** indicator during API fetch
