@@ -11,3 +11,7 @@ export async function getTransactions() {
   const response = await fetch("/transactions.json");
   return response.json();
 }
+
+export async function getCategories() {
+  return ["Groceries", "Shopping", "Income", "Eating Out"]
+}

@@ -129,7 +129,7 @@ YOUR ASSIGNMENT: BUILD THE FINTRACK DASHBOARD
 You will implement a mini personal finance dashboard.
 
 ------------------------------------------------------------
-1) RECENT TRANSACTIONS TABLE
+1) RECENT TRANSACTIONS TABLE ✅
 ------------------------------------------------------------
 
 Fetch transactions using `getTransactions()` from `mockApi.ts`.
@@ -161,9 +161,9 @@ States:
 Use `getCategories()` to populate a dropdown filter.
 
 Requirements:
-- Selecting a category filters the table
-- “All categories” shows everything
-- Filtering must be client-side
+- Selecting a category filters the table ✅
+- “All categories” shows everything✅
+- Filtering must be client-side ✅
 
 ------------------------------------------------------------
 3) SPENDING BREAKDOWN CHART
