@@ -5,10 +5,12 @@ import TransactionChart from "../components/TransactionChart/TransactionChart";
 
 function TransactionsPage() {
     return (
-        <div>
+        <div>   
             <TransactionHeader />
-            <TranscationTable />
-            <TransactionChart />
+            <div className="container">
+                <TranscationTable />
+                <TransactionChart />
+            </div>
         </div>
     )
 }

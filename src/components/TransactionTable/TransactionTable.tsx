@@ -13,12 +13,12 @@ import { useCategories } from "../../hooks/useCategories";
 
 function TranscationTable() {
 	const [filters, setFilters] = useState({
-    date: { value: null, matchMode: FilterMatchMode.CONTAINS },
-    merchant: { value: null, matchMode: FilterMatchMode.CONTAINS },
-    category: { value: null, matchMode: FilterMatchMode.EQUALS },
-    amount: { value: null, matchMode: FilterMatchMode.CONTAINS },
-  });
-	
+		date: { value: null, matchMode: FilterMatchMode.CONTAINS },
+		merchant: { value: null, matchMode: FilterMatchMode.CONTAINS },
+		category: { value: null, matchMode: FilterMatchMode.EQUALS },
+		amount: { value: null, matchMode: FilterMatchMode.CONTAINS },
+	});
+
 	const {
 		transactions,
 		loading,
@@ -29,29 +29,29 @@ function TranscationTable() {
 	const { categories } = useCategories()
 
 	const categoryRowFilterTemplate = (options: any) => {
-			return (
-					<Dropdown 
-						value={options.value}
-						options={categories}
-						onChange={(e) => options.filterApplyCallback(e.value)} 
-						placeholder="Select Category" 
-						className="p-column-filter" 
-						showClear 
-						style={{ minWidth: '12rem' }} 
-					/>
-			);
+		return (
+			<Dropdown
+				value={options.value}
+				options={categories}
+				onChange={(e) => options.filterApplyCallback(e.value)}
+				placeholder="Select Category"
+				className="p-column-filter"
+				showClear
+				style={{ minWidth: '12rem' }}
+			/>
+		);
 	};
 
 	return (
 		<div>
 			{
-				error ? 
+				error ?
 					<Button label="Retry" onClick={fetchTransactions} severity="danger" />
 					:
-					<DataTable 
-						value={transactions} 
-						tableStyle={{ minWidth: '50rem' }} 
-						loading={loading} 
+					<DataTable
+						value={transactions}
+						tableStyle={{ minWidth: '50rem' }}
+						loading={loading}
 						filters={filters}
 						onFilter={(e) => setFilters(e.filters)}
 						filterDisplay="row"
@@ -71,7 +71,7 @@ function TranscationTable() {
 							filterPlaceholder="Marchant"
 							sortable
 						></Column>
-						<Column 
+						<Column
 							field="category"
 							header="Category"
 							filter
@@ -80,10 +80,10 @@ function TranscationTable() {
 							showFilterMenu={false}
 							sortable
 						></Column>
-						<Column 
-							field="amount" 
-							header="Amount" 
-							body={formatAmount} 
+						<Column
+							field="amount"
+							header="Amount"
+							body={formatAmount}
 							filter
 							filterPlaceholder="Amount"
 							sortable

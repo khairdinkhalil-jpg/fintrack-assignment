@@ -30,9 +30,8 @@ function TransactionChart() {
 		setChartData(data);
 	}, [transactions, categories]);
 
-	console.log(chartData)
 	return (
-		<div className="card flex justify-content-center" style={{ height: '400px', width: '300px' }}>
+		<div className="card flex justify-content-center" style={{ height: '400px', width: '500px' }}>
 			<Chart type="pie" data={chartData} options={chartOptions} className="w-full md:w-30rem" />
 		</div>
 	)
