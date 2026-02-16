@@ -1,3 +1,56 @@
+FinTrack – Personal Finance Dashboard
+
+Live Demo: https://main.dtx2ui9rcz7ag.amplifyapp.com/
+
+🚀 Key Features
+Transaction Table: A comprehensive list showing the date, merchant, category, and amount for every transaction.
+
+Dynamic Formatting:
+
+Dates are formatted from ISO strings to a readable format (e.g., "Feb 1, 2026").
+
+Amounts are displayed as currency (£).
+
+Negative amounts (expenses) are styled in red, while positive amounts (income) appear in green.
+
+Category Filtering: A client-side dropdown filter that allows users to view transactions for specific categories like "Groceries" or "Eating Out".
+
+Spending Breakdown Chart: A pie chart visualization that aggregates all expenses by category, providing a quick visual summary of spending habits.
+
+Resilient Data Fetching: Includes handling for loading states and a "Retry" mechanism for the 10% simulated API failure rate.
+
+🛠️ Tech Stack
+Framework: React 18 with TypeScript.
+
+Build Tool: Vite.
+
+UI Components: PrimeReact (DataTable, Chart, Dropdown, Buttons).
+
+Data Visualization: Chart.js.
+
+Testing: Vitest and React Testing Library.
+
+Styling: PrimeReact Themes (Lara Light Cyan) and custom CSS.
+
+📂 Project Structure
+Plaintext
+src/
+├── api/            # Mock API logic and latency simulation
+├── components/     # Reusable UI components (Table, Chart, Header)
+├── hooks/          # Custom hooks for fetching Transactions and Categories
+├── pages/          # Main page layouts (TransactionsPage)
+├── styles/         # Global CSS and layout styling
+└── utilities/      # Data transformation and formatting logic
+
+💡 Implementation Decisions & Trade-offs
+Custom Hooks for State: I abstracted the API logic into useTransactions and useCategories hooks. This separates the "how" of data fetching from the "what" of the UI, making components cleaner and easier to test.
+
+Utility-First Logic: Complex math (like summing expenses for the chart) and formatting (dates/currency) are isolated in a TranscationUtilities file. This ensures the logic is "pure," reusable, and independently testable.
+
+PrimeReact for Speed and UX: Using PrimeReact allowed me to implement advanced features like sorting, row-level filtering, and a responsive chart quickly while maintaining a professional design.
+
+Client-Side Aggregation: The chart data is calculated on the client side using the getSpendingData function. For this dataset size, this is highly efficient and provides an instant UI update when the data is loaded.
+
 # FinTrack – Frontend Technical Assignment
 
 Welcome to the **FinTrack** frontend technical assessment!  
