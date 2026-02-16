@@ -9,10 +9,12 @@ import { useTransactions } from "../../hooks/useTransactions";
 import { FilterMatchMode } from "primereact/api";
 import { Dropdown } from "primereact/dropdown";
 import { useCategories } from "../../hooks/useCategories";
+import type { DataTableFilterMeta } from 'primereact/datatable';
 
 
 function TranscationTable() {
-	const [filters, setFilters] = useState({
+
+	const [filters, setFilters] = useState<DataTableFilterMeta>({
 		date: { value: null, matchMode: FilterMatchMode.CONTAINS },
 		merchant: { value: null, matchMode: FilterMatchMode.CONTAINS },
 		category: { value: null, matchMode: FilterMatchMode.EQUALS },
